@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginTop="@dimen/dp_5"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp_15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContext"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/colorOrange"
+            android:text="1. 72623499240"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivDate"
+                android:src="@drawable/ic_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/tvDate"
+                android:layout_toEndOf="@id/ivDate"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:textSize="@dimen/sp_15"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:textColor="@android:color/black"
+                android:text="13 November 2017"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivSeacrh"
+                android:clickable="true"
+                android:src="@drawable/ic_search"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivCopy"
+                android:clickable="true"
+                android:src="@drawable/ic_copy"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivShare"
+                android:clickable="true"
+                android:src="@drawable/ic_share"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

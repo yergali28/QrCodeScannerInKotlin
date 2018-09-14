@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">QrCodeScannerKotlin</string>
+    <string name="app_name">QrScanner</string>
+    <string name="qr_hint">Hover to QR-code</string>
+    <string name="text_copied">Copied to clipboard</string>
+    <string name="share">Share</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="history">History</string>
+    <string name="flashlight_turned_on">Flashlight turned on</string>
+    <string name="flashlight_turned_off">Flashlight turned off</string>
 </resources>

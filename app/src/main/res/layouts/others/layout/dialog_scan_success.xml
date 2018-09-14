@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_scan_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgOfDialog"
+        android:src="@drawable/ic_done_gr"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/tvResult"
+        android:text="Some text"
+        android:layout_margin="@dimen/sp_10"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnSearch"
+            android:text="@string/search"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorOrange"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_48" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnCopy"
+            android:text="@string/copy"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorOrange"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_48" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnShare"
+            android:text="@string/share"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorOrange"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_48" />
+
+    </LinearLayout>
+
+</LinearLayout>
