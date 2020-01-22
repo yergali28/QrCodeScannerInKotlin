@@ -8,4 +8,5 @@
     <string name="history">History</string>
     <string name="flashlight_turned_on">Flashlight turned on</string>
     <string name="flashlight_turned_off">Flashlight turned off</string>
+    <string name="privacy_policy"><u>Privacy policy</u></string>
 </resources>

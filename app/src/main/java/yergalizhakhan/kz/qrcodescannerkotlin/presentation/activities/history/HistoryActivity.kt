@@ -11,6 +11,7 @@ import yergalizhakhan.kz.qrcodescannerkotlin.domain.History
 import yergalizhakhan.kz.qrcodescannerkotlin.presentation.adapters.HistoryAdapter
 import yergalizhakhan.kz.qrcodescannerkotlin.utils.ActionEnums
 import yergalizhakhan.kz.qrcodescannerkotlin.utils.Constants
+import yergalizhakhan.kz.qrcodescannerkotlin.utils.Constants.preUrl
 
 class HistoryActivity : BaseMvpActivity<HistoryActivityContract.View, HistoryActivityContract.Presenter>(),
         HistoryActivityContract.View {
@@ -36,7 +37,7 @@ class HistoryActivity : BaseMvpActivity<HistoryActivityContract.View, HistoryAct
             history, action ->
             when(action) {
                 ActionEnums().ACTION_SEARCH -> {
-                    searchInWWW(Constants().preUrl + history.context)
+                    searchInWWW(preUrl + history.context)
                 }
                 ActionEnums().ACTION_SHARE -> {
                     shareResultViewSharingIntent(history.context)

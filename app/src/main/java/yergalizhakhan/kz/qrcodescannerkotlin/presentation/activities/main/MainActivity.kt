@@ -20,8 +20,10 @@ import yergalizhakhan.kz.qrcodescannerkotlin.R
 import yergalizhakhan.kz.qrcodescannerkotlin.data.ORM.HistoryORM
 import yergalizhakhan.kz.qrcodescannerkotlin.domain.History
 import yergalizhakhan.kz.qrcodescannerkotlin.presentation.activities.history.HistoryActivity
+import yergalizhakhan.kz.qrcodescannerkotlin.utils.Constants
 import java.text.DateFormat
 import java.util.*
+
 
 class MainActivity : BaseMvpActivity<MainActivityContract.View, MainActivityContract.Presenter>(),
         MainActivityContract.View, View.OnClickListener, ZXingScannerView.ResultHandler {
@@ -57,6 +59,7 @@ class MainActivity : BaseMvpActivity<MainActivityContract.View, MainActivityCont
         frmContent.addView(mScannerView)
         btnLight.setOnClickListener(this)
         btnHistory.setOnClickListener(this)
+        privacyPolicyTextView.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -76,6 +79,10 @@ class MainActivity : BaseMvpActivity<MainActivityContract.View, MainActivityCont
             }
             R.id.btnHistory -> {
                 startActivity(Intent(this, HistoryActivity::class.java))
+            }
+            R.id.privacyPolicyTextView -> {
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(Constants.privacyPolicy))
+                startActivity(browserIntent)
             }
         }
     }
